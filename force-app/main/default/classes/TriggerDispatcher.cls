@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : Subramani Kumarasamy
  * @group             : 
- * @last modified on  : 05-02-2025
+ * @last modified on  : 05-03-2025
  * @last modified by  : Subramani Kumarasamy
 **/
 public with sharing class TriggerDispatcher {
@@ -13,7 +13,6 @@ public with sharing class TriggerDispatcher {
     public static void createAndExecuteHandler(Type handlerType, System.TriggerOperation operationType, String sObjectType) {
 
         if (handlerType == null) {
-           // System.debug('TriggerDispatcher Error: No handler found for SObject [' + sObjectType + '].');
             throw new TriggerDispatchException('TriggerDispatcher Error: No handler found for SObject [' + sObjectType + '].');
         }
         // Instantiate the type

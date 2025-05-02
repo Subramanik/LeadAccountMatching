@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : Subramani Kumarasamy
  * @group             : 
- * @last modified on  : 05-02-2025
+ * @last modified on  : 05-03-2025
  * @last modified by  : Subramani Kumarasamy
 **/
 public virtual class TriggerExecutionController {
@@ -66,7 +66,6 @@ public virtual class TriggerExecutionController {
 
         CustomMetadataTypeUtility.TriggerSettingWrapper triggerSetting = allTriggerSettings.get(triggerName);
 
-        System.debug('TriggerExecutionController: Trigger name: ' + triggerName);
 
         if (triggerSetting == null || isRunningTest) {
             return false; // No action setting, allow execution

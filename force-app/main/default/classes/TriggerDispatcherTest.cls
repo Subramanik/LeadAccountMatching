@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : Subramani Kumarasamy
  * @group             : 
- * @last modified on  : 05-02-2025
+ * @last modified on  : 05-03-2025
  * @last modified by  : Subramani Kumarasamy
 **/
 @isTest
@@ -100,7 +100,6 @@ private class TriggerDispatcherTest {
         try {
             TriggerDispatcher.createAndExecuteHandler(null, System.TriggerOperation.AFTER_INSERT, 'Lead');
         } catch (TriggerDispatcher.TriggerDispatchException e) {
-            System.debug('Exception message: ' + e.getMessage());
             Assert.areEqual(
                 true,
                 e.getMessage().contains('No handler found'),
