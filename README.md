@@ -163,6 +163,59 @@ Should cover:
 
 ---
 
+## Installing the app using a Scratch Org
+
+1. Set up your environment. The steps include:
+
+    - Enable Dev Hub in your Org
+    - Install Salesforce CLI
+    - Install Visual Studio Code
+    - Install the Visual Studio Code Salesforce extensions
+
+1. If you haven't already updated your CLI, update using the below command:
+
+    ```
+    sf update
+    ```
+    
+1. Create an alias **DevHub** by using **-a** and make this the default org using **-d**. To authorize the Dev Hub, in the command window enter the web login flow. The following command opens the Salesforce login page in the web browser:
+
+    ```
+    sf org login web -d -a DevHub
+    ```
+     - Log in using your Dev Hub org credentials. Please note that this is a special org for Salesforce DX. You must use a Dev Hub enabled org for this project.
+     - Click **Allow**.
+       
+1. Clone the LeadAccountMatching repository:
+
+    ```
+    git clone https://github.com/Subramanik/LeadAccountMatching.git
+    ```
+    
+1. Open the above cloned folder `LeadAccountMatching` in your VS Code.
+
+1. Create a scratch org and provide it with an alias (**leadAccountMatching** in the command below):
+
+    ```
+    sf org create scratch -d -f config/project-scratch-def.json -a leadAccountMatching
+    ```
+
+1. Push the app to your scratch org:
+
+    ```
+    sf project deploy start
+    ```
+
+1. Open your scratch org:
+
+    ```
+    sf org open
+    ```
+
+1. Assign `LeadAccountMatchAccess` permissionset your user.
+
+1. 
+
 ## Questions and Feedbacks
 
 - Reach out to **`subramani.rkumarasamy@gmail.com`**
