@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>BaseTriggerHandler</members>
+		<members>BaseTriggerHandlerTest</members>
+		<members>ConstantsUtils</members>
+		<members>CustomMetadataTypeUtility</members>
+		<members>DataFactory</members>
+		<members>LeadAccountMatchingProcessor</members>
+		<members>LeadAccountMatchingService</members>
+		<members>LeadAccountMatchingServiceTest</members>
+		<members>LeadTriggerHandler</members>
+		<members>TriggerDispatcher</members>
+		<members>TriggerDispatcherTest</members>
+		<members>TriggerExecutionController</members>
+		<members>TriggerExecutionControllerTest</members>
+		<members>TriggerHandlerInterface</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ApexTrigger</name>
+	</types>
+	<types>
+		<members>Account.WebsiteDomain_c__c</members>
+		<members>CompanyNameSynonym__mdt.Original__c</members>
+		<members>CompanyNameSynonym__mdt.Replacement__c</members>
+		<members>Lead.Account__c</members>
+		<members>SObjectTriggerActionSetting__mdt.Bypass_Permissions__c</members>
+		<members>SObjectTriggerActionSetting__mdt.Description__c</members>
+		<members>SObjectTriggerActionSetting__mdt.IsActive__c</members>
+		<members>SObjectTriggerActionSetting__mdt.Required_Permission__c</members>
+		<members>SObjectTriggerActionSetting__mdt.SObjectTriggerSetting__c</members>
+		<members>SObjectTriggerSetting__mdt.Bypass_Permissions__c</members>
+		<members>SObjectTriggerSetting__mdt.Description__c</members>
+		<members>SObjectTriggerSetting__mdt.IsActive__c</members>
+		<members>SObjectTriggerSetting__mdt.Required_Permission__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>LeadMatchingThreshold</members>
+		<members>NoiseWords</members>
+		<name>CustomLabel</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomLabels</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomMetadata</name>
+	</types>
+	<types>
+		<members>CompanyNameSynonym__mdt</members>
+		<members>SObjectTriggerActionSetting__mdt</members>
+		<members>SObjectTriggerSetting__mdt</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Account-Account Layout</members>
+		<members>Lead-Lead Layout</members>
+		<members>SObjectTriggerActionSetting__mdt-SObjectTriggerActionSetting Layout</members>
+		<members>SObjectTriggerSetting__mdt-SObjectTriggerSetting Layout</members>
+		<name>Layout</name>
+	</types>
+	<version>63.0</version>
+</Package>

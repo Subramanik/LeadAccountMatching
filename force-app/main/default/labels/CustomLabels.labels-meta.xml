@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>LeadMatchingThreshold</fullName>
+        <categories>Lead</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LeadMatchingThreshold</shortDescription>
+        <value>60</value>
+    </labels>
+    <labels>
+        <fullName>NoiseWords</fullName>
+        <categories>Lead</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NoiseWords</shortDescription>
+        <value>pvt, private, ltd, limited, inc, incorporated, corp, corporation, co, company, llc, gmbh, plc, sa, bv, ag</value>
+    </labels>
+</CustomLabels>

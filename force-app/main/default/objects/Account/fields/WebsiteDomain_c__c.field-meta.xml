@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WebsiteDomain_c__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  AND(NOT(ISBLANK(Website)), CONTAINS(Website, &quot;.&quot;)),
+  LOWER(
+    SUBSTITUTE(
+      SUBSTITUTE(
+        SUBSTITUTE(Website, &quot;https://&quot;, &quot;&quot;),
+        &quot;http://&quot;, &quot;&quot;
+      ),
+      &quot;www.&quot;, &quot;&quot;
+    )
+  ),
+  &quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>WebsiteDomain__c</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
