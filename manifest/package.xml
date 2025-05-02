@@ -63,5 +63,9 @@
 		<members>SObjectTriggerSetting__mdt-SObjectTriggerSetting Layout</members>
 		<name>Layout</name>
 	</types>
+	<types>
+		<members>Lead.AllOpenLeads</members>
+		<name>ListView</name>
+	</types>
 	<version>63.0</version>
 </Package>
