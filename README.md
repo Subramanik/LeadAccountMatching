@@ -19,7 +19,8 @@ A Salesforce solution to automatically match Leads to existing Accounts based on
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Testing](#testing)
-
+- [Installing the app using a Scratch Org](#installing-the-app-using-a-scratch-org)
+- [Questions and Feedbacks](#questions-and-feedbacks)
 ---
 
 ## Overview
@@ -214,7 +215,7 @@ Should cover:
 
 1. Assign `LeadAccountMatchAccess` permissionset your user.
 
-1. 
+1. Load the Accounts and Leads from [this test file](https://docs.google.com/spreadsheets/d/1PBeUJEsiVKUwZglvINiwlRXUDu_qO-GRTHS_4lwMUsM/edit?gid=1605385141#gid=1605385141) to your org to test the feature.
 
 ## Questions and Feedbacks
 
